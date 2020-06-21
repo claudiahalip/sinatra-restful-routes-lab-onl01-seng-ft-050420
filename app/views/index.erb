@@ -1,8 +1,8 @@
 <!doctype html>
 <h1>Recipes</h1>
-<ul>
-  <% @recipes.each do |r|%>
-    <li><%=r.name%> <a href=" /recipes/<%=r.id%>">Recipe link</a></li>
-  <%end%>
-</ul>
+
+<% @recipes.each do |r|%>
+    <a href=" /recipes/<%=r.id%>"><%=r.name%></a></li>
+<%end%>
+
 </html>
